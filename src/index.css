@@ -1,0 +1,68 @@
+
+/*
+
+
+.counter {
+  display: flex;
+  align-items: flex-end;
+}
+.counter button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #c21c1c;
+  color: #D9D9D9;
+  font-size: 1.5rem;
+  box-shadow: 1px 3px 10px rgb(0, 0, 0, 0.2)
+}
+.counter button:hover {
+  background-color: #9c3131;
+  color: #D9D9D9;
+}
+.counter button:focus {
+  outline: none;
+}
+.counter--count {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #410909;
+  box-shadow: 1px 3px 10px rgb(0, 0, 0, 0.2)
+}
+.counter--plus {
+  margin-left: -10px;
+  margin-top: 40px;
+}
+.counter--minus {
+  margin-right: -10px;
+  margin-top: 40px;
+  z-index: 1;
+}
+.fruit--button {
+  background-color: #1d4659;
+  width: 30%;
+  font-size: 1.4rem
+}
+.little--button{
+  width: 20%;
+  background-color: rgb(71, 43, 100);
+}
+.square {
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 2px;
+  border-radius: 5px
+}
+.square:active{
+  transform: none
+}
+
+*/
