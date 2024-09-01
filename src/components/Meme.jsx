@@ -12,8 +12,6 @@ const Meme = () => {
   const [allMemes, setAllMemes] = React.useState([])
 
   useEffect(() => {
-    console.log('rendered')
-
     fetch("https://api.imgflip.com/get_memes")
       .then(res => res.json())
       .then(data => setAllMemes(data.data.memes))
@@ -21,7 +19,6 @@ const Meme = () => {
 
   function handleChange(e) {
     const {name, value} = e.target
-    console.log(e.target.value)
 
     setMeme(prevData => {
       return {
@@ -34,7 +31,6 @@ const Meme = () => {
   function handleSubmit(e) {
     e.preventDefault()
   }
-  console.log(Array.isArray(allMemes))
 
   function getMemeImage(e) {
     e.preventDefault()
@@ -90,23 +86,4 @@ const Meme = () => {
 
 export default Meme
 
-/*
-  function handleClick(e) {
-    e.preventDefault()
-    const array = Memes.data.memes
-    let randomNumber = Math.floor(Math.random() * array.length)
-    //randomNumber - случайный индекс
-    console.log(randomNumber)
-    console.log(array[randomNumber].url)
-  }
-
-
-Другой способ связать label и input
-
-<label htmlFor="bottom-text"> Bottom Text 
-          <input 
-            id="bottom-text"
-
-*/
-
-//name нужен для того, что привязать элемент к функции, а value - чтобы компонент стал controlled component, чтобы именно React.useState() определял его содержимое, а не DOM
+// value нужно, чтобы компонент стал controlled component, чтобы именно React.useState() определял его содержимое, а не DOM
